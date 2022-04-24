@@ -13,6 +13,23 @@ public class HlavniProgram {
         nakresliZmrzlinu(zofka);
 
         nakresliSnehulaka(zofka);
+
+        zofka.turnRight(80);
+        zofka.setLocation(600, 300);
+        nakresliObdelnik(zofka, 100, 200);
+        zofka.turnRight(90);
+        nakresliObdelnik(zofka, 150, 200);
+        zofka.turnLeft(90);
+        nakresliKolecko(zofka, 20);
+        zofka.setLocation(450, 300);
+        zofka.turnLeft(-90);
+        nakresliKolecko(zofka, 10);
+        zofka.setLocation(550, 300);
+        nakresliKolecko(zofka, 10);
+        zofka.setLocation(400, 350);
+        zofka.turnLeft(90);
+        nakresliRovnostrannyTrojuhelnik(zofka, 100);
+
     }
 
     private void nakresliSnehulaka(Turtle zofka) {
@@ -23,7 +40,7 @@ public class HlavniProgram {
         nakresliKolecko(zofka, -13);
         zofka.setLocation(200, 420);
         nakresliKolecko(zofka, 15);
-        zofka.setLocation(140, 240);
+        zofka.setLocation(130, 240);
         nakresliKolecko(zofka, 5);
         zofka.setLocation(260, 240);
         nakresliKolecko(zofka, 5);
